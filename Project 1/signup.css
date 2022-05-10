@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa',
+        cursive;
+
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#head {
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fff;
+
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+#logoimg {
+    height: 40px;
+    width: 70px;
+    padding: 0px 15px 0px 0px;
+    margin-left: 70px;
+
+}
+
+#logoimg1 {
+    height: 40px;
+    width: 70px;
+    padding: 0px 15px 0px 0px;
+    /* margin-left: -90px; */
+    margin-left: -35%;
+    margin-bottom: 30px;
+
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    opacity: 0;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 6px 8px;
+    position: relative;
+}
+
+.nav-links ul li {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Comfortaa',
+        cursive;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+#imgup {
+    height: 550px;
+    width: 800px;
+    float: right;
+    margin-top: 65px;
+    margin-right: 60px;
+}
+
+.headleft {
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    margin-left: 70px;
+    margin-top: 180px;
+    font-family: 'Montserrat',
+        sans-serif;
+    top: 40px;
+    left: 10px;
+
+}
+
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7d2ae8;
+    padding: 30px;
+    background-image: url(bgimg.png);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 850px;
+    background: white;
+    width: 100%;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-left: 500px;
+}
+
+.container .form {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+
+.container .form-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#leftbox {
+    height: 400px;
+    width: 400px;
+}
+
+form .form-content .title {
+    position: relative;
+    font-size: 35px;
+    font-weight: 500;
+    color: #333;
+    margin-left: -60%;
+}
+
+/* form .form-content .title:before
+{
+    content:'';
+    position: absolute;
+    height: 3px;
+    left:0;
+    bottom:0;
+    width: 90px;
+    background: #7d2ae8;
+} */
+form .form-content .input-boxes {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: -100px;
+}
+
+form .form-content .input-box {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 0 -40px;
+}
+
+.form-content .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+form .form-content .bottomsign {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 30px;
+    margin-left: -35px;
+
+}
+
+form .form-content .bottomsign a {
+    text-decoration: none;
+}
+
+form .form-content .bottomsign a:hover {
+    text-decoration: underline;
+}
+
+form .form-content .button {
+    color: #fff;
+    margin-top: 40px;
+}
+
+form .form-content .button input {
+    color: #fff;
+    background: #7d2ae8;
+    border-radius: 10px;
+    padding: 0px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+form .form-content .button input:hover {
+    background: #5b13b9;
+}
+
+form .form-content label {
+    color: #5b13b9;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form .form-content label:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 68px;
+    background: #11101D;
+    padding: 6px 14px;
+    z-index: 99;
+    transition: all 0.5s ease;
+}
+
+.sidebar.open {
+    width: 230px;
+}
+
+.sidebar .logo-details {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+.sidebar .logo-details .icon {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.sidebar .logo-details .logo_name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.sidebar.open .logo-details .icon,
+.sidebar.open .logo-details .logo_name {
+    opacity: 1;
+}
+
+.sidebar .logo-details #btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: all 0.4s ease;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.sidebar.open .logo-details #btn {
+    text-align: right;
+}
+
+.sidebar i {
+    color: #fff;
+    height: 60px;
+    min-width: 40px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.sidebar li .tooltip {
+    position: absolute;
+    top: -20px;
+    left: calc(100% + 15px);
+    z-index: 3;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: 0s;
+    list-style: none;
+}
+
+.sidebar li:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.sidebar.open li .tooltip {
+    display: none;
+}
+
+ul {
+    list-style: none;
+
+}
+
+
+.sidebar li a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    background: #11101D;
+    list-style: none;
+}
+
+.sidebar li a:hover {
+    background: #FFF;
+}
+
+.sidebar li a .links_name {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+.sidebar.open li a .links_name {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i {
+    transition: all 0.5s ease;
+    color: #11101D;
+}
+
+
+ul li a {
+    text-decoration: none;
+}
